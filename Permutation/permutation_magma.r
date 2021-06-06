@@ -118,49 +118,4 @@ Fig_random(results_blood_vs_smultixcan,Sig_blood_sig,Sig_smultixcan)
 
 
 
-
-#--------------temp---------------------
-
-hist(results_magma_vs_smultixcan, col="#426ab3",xlab="Counts of overlapped genes",main=NULL)
-temp1 <- match(Sig_magma_sig,Sig_smultixcan)
-Observed_overlaped_genes <- na.omit(temp1)
-Observed_gene_num <- length(Observed_overlaped_genes)
-abline(v=Observed_gene_num,col="darkblue",lty="longdash")
-P_value=length(x[x>Observed_gene_num])/length(x)
-x1= Observed_gene_num
-freq <- table(x)
-y1 = max(freq)
-text(x1,y1,P_value)
-
-
-hist(results_liver_vs_smultixcan, col="#426ab3",xlab="Counts of overlapped genes",main=NULL)
-temp1 <- match(Sig_liver_sig,Sig_smultixcan)
-Observed_overlaped_genes <- na.omit(temp1)
-Observed_gene_num <- length(Observed_overlaped_genes)
-abline(v=Observed_gene_num,col="darkblue",lty="longdash")
-P_value=length(x[x>Observed_gene_num])/length(x)
-x1= Observed_gene_num
-freq <- table(x)
-y1 = max(freq)
-text(x1,y1,P_value)
-
-
-
-
-hist(results_blood_vs_smultixcan, col="#426ab3",xlab="Counts of overlapped genes",main=NULL)
-temp1 <- match(Sig_blood_sig,Sig_smultixcan)
-Observed_overlaped_genes <- na.omit(temp1)
-Observed_gene_num <- length(Observed_overlaped_genes)
-abline(v=Observed_gene_num,col="darkblue",lty="longdash")
-P_value=length(x[x>Observed_gene_num])/length(x)
-x1= Observed_gene_num
-freq <- table(x)
-y1 = max(freq)
-text(x1,y1,P_value)
-
-
-
-
-
-
 #End
