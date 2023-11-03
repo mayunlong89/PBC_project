@@ -9,6 +9,8 @@ Primary biliary cholangitis (PBC) is a classical autoimmune disease, which is hi
  # Objective: 
  To identify genetics-modulated functional liver cell subsets involved in the pathogenesis of PBC. 
 
+ ![Figure 1](https://github.com/mayunlong89/PBC_project/blob/main/figures/Figure%201.jpg)
+
 # Introduction
 Primary biliary cholangitis (PBC), which is formally known as primary biliary cirrhosis until 2016 1, is a rare chronic cholestatic liver disease characterized by progressive autoimmune-mediated destruction of the small intrahepatic biliary epithelial cells 2,3. PBC patients suffering from chronic cholestasis can eventually lead to cirrhosis and hepatic failure without effective treatments 2,4,5. Although ursodeoxycholic acid has been used as the first-line therapeutic agent for PBC, there exist 10% to 20% of PBC patients resistant to ursodeoxycholic acid and developing to advanced-stage liver disease 2,6. Previous studies 7-9 have reported that a combination of genetic and environmental risk factors have an important influence on the aetiology of PBC. Hence, understanding the genetic mechanisms of PBC is becoming a great interest, which may promote the development of individualized therapeutic strategy for PBC. 
 
