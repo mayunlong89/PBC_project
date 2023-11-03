@@ -1,6 +1,8 @@
 # Title of this project:
 Integration of single cell sequencing data and GWAS summary statistics identifies ORMDL3-mediated cholangiocytes associated with primary biliary cholangitis
 
+This project has been done and published in [Xiang et al. Journal of Nanobiotechnology, 2021](https://jnanobiotechnology.biomedcentral.com/articles/10.1186/s12951-021-01154-2).
+
 # Importance: 
 Primary biliary cholangitis (PBC) is a classical autoimmune disease, which is highly influenced by genetic determinants. Many genome-wide association studies (GWAS) have reported that numerous genetic loci were significantly associated with PBC susceptibility. However, the effects of genetic determinants on liver cells for PBC remain largely unknown.
 
