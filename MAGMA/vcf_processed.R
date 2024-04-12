@@ -10,7 +10,7 @@ library(tidyr)
 
 # Split name column into firstname and last name
 temp1 <- temp[-1,]
-temp1 <- temp1 %>% separate(ieu.b.31, c('ES', 'SE','LP','AF','SS','ID'),sep =":")
+temp1 <- temp1 %>% separate(ieu.b.31, c('ES', 'SE','LP','AF','SS','SNP'),sep =":")
 colnames(temp1) <- c('CHR','POS','SNP','REF','ALT','ES', 'SE','LP','AF','SS','ID')
 monocyte_gwas_sub <- temp1
 temp1 <- c()
