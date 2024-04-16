@@ -32,8 +32,13 @@ write.table(monocyte_gwas_sub2,file="monocyte_gwas_subset1_ieu-b-31.vcf")
 length(monocyte_gwas_sub$CHR)
 
 ###Gene ID annotate to Gene SYMBOL (Gene name)
-ref <- read.table("~/NCBI37.3.gene.loc")
-monocyte_gwas_sub2$gene_name <- ref$V6[which(ref$V1 %in% monocyte_gwas_sub2$ID)]
+ref <- read.table("/Users/mayunlong/Desktop/WMU2024/01-Deep learning_代码/01-组学相关代码/NCBI37.3.gene.loc")
+colnames(ref) <- c("ID","CHR","Start","End","Strand","SYMBOL")
+setwd("/Users/mayunlong/Desktop/WMU2024/ctDRTF-codes and data/scHBO/GWAS-data/MAGMA_result_fuma/five_autoimmune_disease/")
+IBD <- read.table("IBD_magma_genes.out",header = TRUE)
+#IBD <- IBD[,-which(colnames(IBD)=="gene_name")]
+IBD$gene_name <- ref$SYMBOL[match(IBD$GENE,ref$ID)]
+write.table(IBD,file="IBD_magma_genes_new.out",col.names = TRUE, row.names = FALSE,quote = FALSE)
 
 
 temp2 <- temp1[1:100,]
